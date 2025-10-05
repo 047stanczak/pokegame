@@ -10,6 +10,7 @@ public class ConsoleUI {
         boolean inMenu = true;
 
         while(inMenu){
+            ClearTerminal.clearTerminal();
             System.out.println("Menu de opções");
             System.out.println("Por favor, selecione uma opção:");
             System.out.println("1 - Batalha");
@@ -22,6 +23,9 @@ public class ConsoleUI {
                 case 1:
                     ClearTerminal.clearTerminal();
                     battle(scanner);
+                    scanner.nextLine();
+                    System.out.println("Pressione enter para continuar");
+                    scanner.nextLine();
                     break;
                 case 2:
                     ClearTerminal.clearTerminal();
@@ -45,6 +49,7 @@ public class ConsoleUI {
     }
 
     public void pokedex(Scanner scanner) {
+        ClearTerminal.clearTerminal();
         System.out.println("Pokedex...");
         System.out.println("Selecione uma opção");
         System.out.println("1 - Listar todos os Pokemons");
@@ -55,19 +60,39 @@ public class ConsoleUI {
 
         switch (option) {
             case 1:
+                ClearTerminal.clearTerminal();
                 DataLoader.pokemonList.forEach(pokemon -> System.out.println("Nome: " + pokemon.getName() + " - ID: " + pokemon.getId()));
+                scanner.nextLine();
+                System.out.println("Pressione enter para continuar");
+                scanner.nextLine();
                 break;
             case 2:
+                ClearTerminal.clearTerminal();
                 System.out.println("Digite o ID do Pokemon:");
                 int id = scanner.nextInt();
+                ClearTerminal.clearTerminal();
                 DataLoader.pokemonList.stream()
                         .filter(pokemon -> pokemon.getId() == id)
                         .findFirst()
                         .ifPresentOrElse(
-                                pokemon -> System.out.println(pokemon),
+                                pokemon -> System.out.println(
+                                    "Nome: " + pokemon.getName()
+                                    + "\nID: " + pokemon.getId()
+                                    + "\nHP: " + pokemon.getHp()
+                                    + "\nStatus - Attack: " + pokemon.getStatus().getAttack()
+                                    + "\nStatus - Defense: " + pokemon.getStatus().getDefense()
+                                    + "\nStatus - Speed: " + pokemon.getStatus().getSpeed()
+                                    + "\nModifiers: " + pokemon.getModifiers()
+                                    + "\nTipo: " + pokemon.getType()
+                                    + "\nMoves: " + pokemon.getMoves()
+                                    ),
                                 () -> System.out.println("Pokemon não encontrado.")
                         );
-                return;
+                        scanner.nextLine();
+                        System.out.println("Pressione enter para continuar");
+                        scanner.nextLine();
+
+                        return;
             case 3:
                 System.out.println("Voltando...");
                 return;

@@ -3,12 +3,14 @@ package com.stanczak.pokegame;
 import java.util.Scanner;
 
 import com.stanczak.pokegame.ui.ConsoleUI;
+import com.stanczak.pokegame.util.ClearTerminal;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
         while(running){
+            ClearTerminal.clearTerminal();
             System.out.println("Seja bem vindo ao pokegame!");
             System.out.println("Selecione uma opção:");
             System.out.println("1 - Jogar");
