@@ -1,0 +1,408 @@
+[
+  {
+    "id": 1,
+    "name": "Bulbasaur",
+    "hp": 45,
+    "status": {
+      "attack": 49,
+      "defense": 49,
+      "speed": 45
+    },
+    "modifiers": "NONE",
+    "type": [
+      "GRASS",
+      "POISON"
+    ],
+    "moves": [
+      "Vine Whip",
+      "Razor Leaf",
+      "Seed Bomb",
+      "Sludge Bomb"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Charmander",
+    "hp": 39,
+    "status": {
+      "attack": 52,
+      "defense": 43,
+      "speed": 65
+    },
+    "modifiers": "NONE",
+    "type": [
+      "FIRE"
+    ],
+    "moves": [
+      "Ember",
+      "Flamethrower",
+      "Dragon Claw",
+      "Fire Blast"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Squirtle",
+    "hp": 44,
+    "status": {
+      "attack": 48,
+      "defense": 65,
+      "speed": 43
+    },
+    "modifiers": "NONE",
+    "type": [
+      "WATER"
+    ],
+    "moves": [
+      "Water Gun",
+      "Bubble Beam",
+      "Hydro Pump",
+      "Skull Bash"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Pikachu",
+    "hp": 35,
+    "status": {
+      "attack": 55,
+      "defense": 40,
+      "speed": 90
+    },
+    "modifiers": "NONE",
+    "type": [
+      "ELECTRIC"
+    ],
+    "moves": [
+      "Thunder Shock",
+      "Quick Attack",
+      "Thunderbolt",
+      "Agility"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Pidgey",
+    "hp": 40,
+    "status": {
+      "attack": 45,
+      "defense": 40,
+      "speed": 56
+    },
+    "modifiers": "NONE",
+    "type": [
+      "NORMAL",
+      "FLYING"
+    ],
+    "moves": [
+      "Gust",
+      "Sand Attack",
+      "Wing Attack",
+      "Quick Attack"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Rattata",
+    "hp": 30,
+    "status": {
+      "attack": 56,
+      "defense": 35,
+      "speed": 72
+    },
+    "modifiers": "NONE",
+    "type": [
+      "NORMAL"
+    ],
+    "moves": [
+      "Tackle",
+      "Quick Attack",
+      "Hyper Fang",
+      "Focus Energy"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Jigglypuff",
+    "hp": 115,
+    "status": {
+      "attack": 45,
+      "defense": 20,
+      "speed": 20
+    },
+    "modifiers": "NONE",
+    "type": [
+      "NORMAL"
+    ],
+    "moves": [
+      "Pound",
+      "Sing",
+      "Double Slap",
+      "Rest"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Caterpie",
+    "hp": 45,
+    "status": {
+      "attack": 30,
+      "defense": 35,
+      "speed": 45
+    },
+    "modifiers": "NONE",
+    "type": [
+      "BUG"
+    ],
+    "moves": [
+      "Tackle",
+      "String Shot",
+      "Bug Bite",
+      "Struggle"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Weedle",
+    "hp": 40,
+    "status": {
+      "attack": 35,
+      "defense": 30,
+      "speed": 50
+    },
+    "modifiers": "NONE",
+    "type": [
+      "BUG",
+      "POISON"
+    ],
+    "moves": [
+      "Poison Sting",
+      "String Shot",
+      "Bug Bite",
+      "Electroweb"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Geodude",
+    "hp": 40,
+    "status": {
+      "attack": 80,
+      "defense": 100,
+      "speed": 20
+    },
+    "modifiers": "NONE",
+    "type": [
+      "ROCK",
+      "GROUND"
+    ],
+    "moves": [
+      "Rock Throw",
+      "Magnitude",
+      "Rollout",
+      "Self-Destruct"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Onyx",
+    "hp": 35,
+    "status": {
+      "attack": 45,
+      "defense": 160,
+      "speed": 70
+    },
+    "modifiers": "NONE",
+    "type": [
+      "ROCK",
+      "GROUND"
+    ],
+    "moves": [
+      "Rock Throw",
+      "Dig",
+      "Iron Tail",
+      "Sand Tomb"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Magikarp",
+    "hp": 20,
+    "status": {
+      "attack": 10,
+      "defense": 55,
+      "speed": 80
+    },
+    "modifiers": "NONE",
+    "type": [
+      "WATER"
+    ],
+    "moves": [
+      "Splash",
+      "Tackle",
+      "Flail",
+      "Struggle"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Psyduck",
+    "hp": 50,
+    "status": {
+      "attack": 52,
+      "defense": 48,
+      "speed": 55
+    },
+    "modifiers": "NONE",
+    "type": [
+      "WATER"
+    ],
+    "moves": [
+      "Scratch",
+      "Water Gun",
+      "Confusion",
+      "Aqua Tail"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Abra",
+    "hp": 25,
+    "status": {
+      "attack": 20,
+      "defense": 15,
+      "speed": 90
+    },
+    "modifiers": "NONE",
+    "type": [
+      "PSYCHIC"
+    ],
+    "moves": [
+      "Teleport",
+      "Psybeam",
+      "Psychic",
+      "Shadow Ball"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Ekans",
+    "hp": 35,
+    "status": {
+      "attack": 60,
+      "defense": 44,
+      "speed": 55
+    },
+    "modifiers": "NONE",
+    "type": [
+      "POISON"
+    ],
+    "moves": [
+      "Poison Sting",
+      "Bite",
+      "Acid",
+      "Sludge Bomb"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Nidoran",
+    "hp": 46,
+    "status": {
+      "attack": 57,
+      "defense": 40,
+      "speed": 50
+    },
+    "modifiers": "NONE",
+    "type": [
+      "POISON"
+    ],
+    "moves": [
+      "Peck",
+      "Poison Sting",
+      "Horn Attack",
+      "Double Kick"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Nidoran",
+    "hp": 55,
+    "status": {
+      "attack": 47,
+      "defense": 52,
+      "speed": 41
+    },
+    "modifiers": "NONE",
+    "type": [
+      "POISON"
+    ],
+    "moves": [
+      "Scratch",
+      "Poison Sting",
+      "Double Kick",
+      "Bite"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Growlithe",
+    "hp": 55,
+    "status": {
+      "attack": 70,
+      "defense": 45,
+      "speed": 60
+    },
+    "modifiers": "NONE",
+    "type": [
+      "FIRE"
+    ],
+    "moves": [
+      "Bite",
+      "Ember",
+      "Flamethrower",
+      "Fire Fang"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Machop",
+    "hp": 70,
+    "status": {
+      "attack": 80,
+      "defense": 50,
+      "speed": 35
+    },
+    "modifiers": "NONE",
+    "type": [
+      "FIGHTING"
+    ],
+    "moves": [
+      "Karate Chop",
+      "Low Kick",
+      "Seismic Toss",
+      "Submission"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Gastly",
+    "hp": 30,
+    "status": {
+      "attack": 35,
+      "defense": 30,
+      "speed": 80
+    },
+    "modifiers": "NONE",
+    "type": [
+      "GHOST",
+      "POISON"
+    ],
+    "moves": [
+      "Lick",
+      "Confuse Ray",
+      "Shadow Ball",
+      "Dark Pulse"
+    ]
+  }
+]
