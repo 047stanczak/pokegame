@@ -1,0 +1,9 @@
+{
+  "menu": {
+    "welcome": "Seja bem vindo ao pokegame!",
+    "title": "Selecione uma opção:",
+    "option_play": "1 - Jogar",
+    "option_exit": "2 - Sair",
+    "option_invalid": "Opção inválida."
+  }
+}
