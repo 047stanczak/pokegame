@@ -4,6 +4,27 @@
     "title": "Selecione uma opção:",
     "option_play": "1 - Jogar",
     "option_exit": "2 - Sair",
-    "option_invalid": "Opção inválida."
+    "option_invalid": "Opção inválida.",
+    "menu_options": "Menu de opções",
+    "option_battle": "1 - Batalha",
+    "option_pokedex": "2 - Pokedex",
+    "option_back": "3 - Voltar"
+  },
+  "pokedex": {
+    "title": "Pokedex",
+    "option_list": "1 - Listar todos os Pokemons",
+    "option_search": "2 - Buscar Pokemon por id (Busca avançada)",
+    "name": "Nome: ",
+    "id": "ID: ",
+    "hp": "HP: ",
+    "attack": "Ataque: ",
+    "defense": "Defesa: ",
+    "speed": "Velocidade: ",
+    "modifiers": "Modificadores: ",
+    "type": "Tipo: ",
+    "moves": "Movimentos: ",
+    "enter_id": "Digite o ID do Pokemon: ",
+    "press_enter": "Pressione enter para continuar"
   }
+  
 }

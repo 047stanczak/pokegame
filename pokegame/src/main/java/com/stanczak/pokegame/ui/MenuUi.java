@@ -26,12 +26,11 @@ public class MenuUi {
 
             switch (option) {
                 case 1:
-                    console.clearScreen();
-                    console.println("Batalha(em desenvolvimento)...");
+                    StartPageUI startPage = new StartPageUI(console);
+                    startPage.start();
                     break;
                 case 2:
-                    console.clearScreen();
-                    
+                    running = false;
                     break;
                 default:
                     console.println(menu.getOption_invalid());

@@ -6,6 +6,10 @@ public class Menu {
     private String option_play;
     private String option_exit;
     private String option_invalid;
+    private String menu_options;
+    private String option_battle;
+    private String option_pokedex;
+    private String option_back;
     public String getWelcome() {
         return welcome;
     }
@@ -21,4 +25,17 @@ public class Menu {
     public String getOption_invalid() {
         return option_invalid;
     }
+    public String getMenu_options() {
+        return menu_options;
+    }
+    public String getOption_battle() {
+        return option_battle;
+    }
+    public String getOption_pokedex() {
+        return option_pokedex;
+    }
+    public String getOption_back() {
+        return option_back;
+    }
+    
 }
