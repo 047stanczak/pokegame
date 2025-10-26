@@ -27,8 +27,8 @@ public class StartPageUI {
 
             switch (option) {
                 case 1:
-                    console.clearScreen();
-                    console.println("Batalha em desenvolvimento...");
+                    BattleUi battleUi = new BattleUi(console);
+                    battleUi.battle();
                     break;
                 case 2:
                     PokedexUi pokedexUi = new PokedexUi(console);

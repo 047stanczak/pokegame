@@ -10,6 +10,7 @@ public class Pokemon {
     private Modifiers modifiers;  
     private List<ElementType> type;
     private List<String> moves;
+    
     public int getId() {
         return id;
     }

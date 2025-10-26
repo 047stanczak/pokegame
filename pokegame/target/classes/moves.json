@@ -1,62 +1,482 @@
 [
-  {"name": "Vine Whip", "power": 45, "accuracy": 100, "pp": 25, "category": "PHYSICAL", "effect": "Whips with vines to attack"},
-  {"name": "Razor Leaf", "power": 55, "accuracy": 95, "pp": 25, "category": "PHYSICAL", "effect": "Sharp leaves with high critical hit ratio"},
-  {"name": "Seed Bomb", "power": 80, "accuracy": 100, "pp": 15, "category": "PHYSICAL", "effect": "Slams a seed bomb onto the target"},
-  {"name": "Sludge Bomb", "power": 90, "accuracy": 100, "pp": 10, "category": "SPECIAL", "effect": "Unsanitary sludge that may poison"},
-  {"name": "Ember", "power": 40, "accuracy": 100, "pp": 25, "category": "SPECIAL", "effect": "Weak fire attack that may burn"},
-  {"name": "Flamethrower", "power": 90, "accuracy": 100, "pp": 15, "category": "SPECIAL", "effect": "Intense fire that may burn target"},
-  {"name": "Dragon Claw", "power": 80, "accuracy": 100, "pp": 15, "category": "PHYSICAL", "effect": "Sharp claws for a powerful attack"},
-  {"name": "Fire Blast", "power": 110, "accuracy": 85, "pp": 5, "category": "SPECIAL", "effect": "Intense fire that may burn target"},
-  {"name": "Water Gun", "power": 40, "accuracy": 100, "pp": 25, "category": "SPECIAL", "effect": "Shoots water at the target"},
-  {"name": "Bubble Beam", "power": 65, "accuracy": 100, "pp": 20, "category": "SPECIAL", "effect": "Bubbles that may lower speed"},
-  {"name": "Hydro Pump", "power": 110, "accuracy": 80, "pp": 5, "category": "SPECIAL", "effect": "Powerful water blast"},
-  {"name": "Skull Bash", "power": 130, "accuracy": 100, "pp": 10, "category": "PHYSICAL", "effect": "Charges then attacks next turn"},
-  {"name": "Thunder Shock", "power": 40, "accuracy": 100, "pp": 30, "category": "SPECIAL", "effect": "Electric shock that may paralyze"},
-  {"name": "Quick Attack", "power": 40, "accuracy": 100, "pp": 30, "category": "PHYSICAL", "effect": "High priority attack"},
-  {"name": "Thunderbolt", "power": 90, "accuracy": 100, "pp": 15, "category": "SPECIAL", "effect": "Strong bolt that may paralyze"},
-  {"name": "Agility", "power": 0, "accuracy": 100, "pp": 30, "category": "STATUS", "effect": "Sharply raises user's speed"},
-  {"name": "Gust", "power": 40, "accuracy": 100, "pp": 35, "category": "SPECIAL", "effect": "Whips up a strong gust of wind"},
-  {"name": "Sand Attack", "power": 0, "accuracy": 100, "pp": 15, "category": "STATUS", "effect": "Lowers target's accuracy"},
-  {"name": "Wing Attack", "power": 60, "accuracy": 100, "pp": 35, "category": "PHYSICAL", "effect": "Strikes with wings"},
-  {"name": "Tackle", "power": 40, "accuracy": 100, "pp": 35, "category": "PHYSICAL", "effect": "Basic physical attack"},
-  {"name": "Hyper Fang", "power": 80, "accuracy": 90, "pp": 15, "category": "PHYSICAL", "effect": "Powerful bite that may cause flinch"},
-  {"name": "Focus Energy", "power": 0, "accuracy": 100, "pp": 30, "category": "STATUS", "effect": "Raises critical hit ratio"},
-  {"name": "Pound", "power": 40, "accuracy": 100, "pp": 35, "category": "PHYSICAL", "effect": "Basic pounding attack"},
-  {"name": "Sing", "power": 0, "accuracy": 55, "pp": 15, "category": "STATUS", "effect": "May put target to sleep"},
-  {"name": "Double Slap", "power": 15, "accuracy": 85, "pp": 10, "category": "PHYSICAL", "effect": "Repeated slaps (2-5 hits)"},
-  {"name": "Rest", "power": 0, "accuracy": 100, "pp": 10, "category": "STATUS", "effect": "User sleeps for 2 turns, fully healing"},
-  {"name": "String Shot", "power": 0, "accuracy": 95, "pp": 40, "category": "STATUS", "effect": "Lowers target's speed"},
-  {"name": "Bug Bite", "power": 60, "accuracy": 100, "pp": 20, "category": "PHYSICAL", "effect": "Bites the target"},
-  {"name": "Struggle", "power": 50, "accuracy": 100, "pp": 1, "category": "PHYSICAL", "effect": "Used when out of PP, hurts user"},
-  {"name": "Poison Sting", "power": 15, "accuracy": 100, "pp": 35, "category": "PHYSICAL", "effect": "Sting that may poison target"},
-  {"name": "Electroweb", "power": 55, "accuracy": 95, "pp": 15, "category": "SPECIAL", "effect": "Electric web that lowers speed"},
-  {"name": "Rock Throw", "power": 50, "accuracy": 90, "pp": 15, "category": "PHYSICAL", "effect": "Throws a rock at the target"},
-  {"name": "Magnitude", "power": 0, "accuracy": 100, "pp": 30, "category": "PHYSICAL", "effect": "Ground shake with varying power"},
-  {"name": "Rollout", "power": 30, "accuracy": 90, "pp": 20, "category": "PHYSICAL", "effect": "Rolling attack that gains power"},
-  {"name": "Self-Destruct", "power": 200, "accuracy": 100, "pp": 5, "category": "PHYSICAL", "effect": "Explodes, user faints"},
-  {"name": "Dig", "power": 80, "accuracy": 100, "pp": 10, "category": "PHYSICAL", "effect": "Digs underground, attacks next turn"},
-  {"name": "Iron Tail", "power": 100, "accuracy": 75, "pp": 15, "category": "PHYSICAL", "effect": "Hard tail that may lower defense"},
-  {"name": "Sand Tomb", "power": 35, "accuracy": 85, "pp": 15, "category": "PHYSICAL", "effect": "Traps target in sand for 4-5 turns"},
-  {"name": "Splash", "power": 0, "accuracy": 100, "pp": 40, "category": "STATUS", "effect": "No effect"},
-  {"name": "Flail", "power": 0, "accuracy": 100, "pp": 15, "category": "PHYSICAL", "effect": "More power when user has less HP"},
-  {"name": "Scratch", "power": 40, "accuracy": 100, "pp": 35, "category": "PHYSICAL", "effect": "Scratches with sharp claws"},
-  {"name": "Confusion", "power": 50, "accuracy": 100, "pp": 25, "category": "SPECIAL", "effect": "Psychic wave that may confuse"},
-  {"name": "Aqua Tail", "power": 90, "accuracy": 90, "pp": 10, "category": "PHYSICAL", "effect": "Swings tail like a wave"},
-  {"name": "Teleport", "power": 0, "accuracy": 100, "pp": 20, "category": "STATUS", "effect": "Flees from wild battles"},
-  {"name": "Psybeam", "power": 65, "accuracy": 100, "pp": 20, "category": "SPECIAL", "effect": "Psychic beam that may confuse"},
-  {"name": "Psychic", "power": 90, "accuracy": 100, "pp": 10, "category": "SPECIAL", "effect": "Strong psychic that may lower SP DEF"},
-  {"name": "Shadow Ball", "power": 80, "accuracy": 100, "pp": 15, "category": "SPECIAL", "effect": "Shadowy sphere that may lower SP DEF"},
-  {"name": "Bite", "power": 60, "accuracy": 100, "pp": 25, "category": "PHYSICAL", "effect": "Bite that may cause flinch"},
-  {"name": "Acid", "power": 40, "accuracy": 100, "pp": 30, "category": "SPECIAL", "effect": "Sprays acid that may lower defense"},
-  {"name": "Peck", "power": 35, "accuracy": 100, "pp": 35, "category": "PHYSICAL", "effect": "Jabs with a sharp beak"},
-  {"name": "Horn Attack", "power": 65, "accuracy": 100, "pp": 25, "category": "PHYSICAL", "effect": "Jabs with a horn"},
-  {"name": "Double Kick", "power": 30, "accuracy": 100, "pp": 30, "category": "PHYSICAL", "effect": "Two kicks in one turn"},
-  {"name": "Fire Fang", "power": 65, "accuracy": 95, "pp": 15, "category": "PHYSICAL", "effect": "Bite that may burn or flinch"},
-  {"name": "Karate Chop", "power": 50, "accuracy": 100, "pp": 25, "category": "PHYSICAL", "effect": "High critical hit ratio"},
-  {"name": "Low Kick", "power": 0, "accuracy": 100, "pp": 20, "category": "PHYSICAL", "effect": "More damage to heavier targets"},
-  {"name": "Seismic Toss", "power": 0, "accuracy": 100, "pp": 20, "category": "PHYSICAL", "effect": "Damage equals user's level"},
-  {"name": "Submission", "power": 80, "accuracy": 80, "pp": 20, "category": "PHYSICAL", "effect": "User takes recoil damage"},
-  {"name": "Lick", "power": 30, "accuracy": 100, "pp": 30, "category": "PHYSICAL", "effect": "Lick that may paralyze"},
-  {"name": "Confuse Ray", "power": 0, "accuracy": 100, "pp": 10, "category": "STATUS", "effect": "Confuses the target"},
-  {"name": "Dark Pulse", "power": 80, "accuracy": 100, "pp": 15, "category": "SPECIAL", "effect": "Dark aura that may cause flinch"}
+  {
+    "name": "Vine Whip",
+    "power": 45,
+    "accuracy": 100,
+    "pp": 25,
+    "category": "PHYSICAL",
+    "effect": "Whips with vines to attack"
+  },
+  {
+    "name": "Razor Leaf",
+    "power": 55,
+    "accuracy": 95,
+    "pp": 25,
+    "category": "PHYSICAL",
+    "effect": "Sharp leaves with high critical hit ratio"
+  },
+  {
+    "name": "Seed Bomb",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 15,
+    "category": "PHYSICAL",
+    "effect": "Slams a seed bomb onto the target"
+  },
+  {
+    "name": "Sludge Bomb",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "category": "SPECIAL",
+    "effect": "Unsanitary sludge that may poison"
+  },
+  {
+    "name": "Ember",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 25,
+    "category": "SPECIAL",
+    "effect": "Weak fire attack that may burn"
+  },
+  {
+    "name": "Flamethrower",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 15,
+    "category": "SPECIAL",
+    "effect": "Intense fire that may burn target"
+  },
+  {
+    "name": "Dragon Claw",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 15,
+    "category": "PHYSICAL",
+    "effect": "Sharp claws for a powerful attack"
+  },
+  {
+    "name": "Fire Blast",
+    "power": 110,
+    "accuracy": 85,
+    "pp": 5,
+    "category": "SPECIAL",
+    "effect": "Intense fire that may burn target"
+  },
+  {
+    "name": "Water Gun",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 25,
+    "category": "SPECIAL",
+    "effect": "Shoots water at the target"
+  },
+  {
+    "name": "Bubble Beam",
+    "power": 65,
+    "accuracy": 100,
+    "pp": 20,
+    "category": "SPECIAL",
+    "effect": "Bubbles that may lower speed"
+  },
+  {
+    "name": "Hydro Pump",
+    "power": 110,
+    "accuracy": 80,
+    "pp": 5,
+    "category": "SPECIAL",
+    "effect": "Powerful water blast"
+  },
+  {
+    "name": "Skull Bash",
+    "power": 130,
+    "accuracy": 100,
+    "pp": 10,
+    "category": "PHYSICAL",
+    "effect": "Charges then attacks next turn"
+  },
+  {
+    "name": "Thunder Shock",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "category": "SPECIAL",
+    "effect": "Electric shock that may paralyze"
+  },
+  {
+    "name": "Quick Attack",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "category": "PHYSICAL",
+    "effect": "High priority attack"
+  },
+  {
+    "name": "Thunderbolt",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 15,
+    "category": "SPECIAL",
+    "effect": "Strong bolt that may paralyze"
+  },
+  {
+    "name": "Agility",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 30,
+    "category": "STATUS",
+    "effect": "Sharply raises user's speed"
+  },
+  {
+    "name": "Gust",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 35,
+    "category": "SPECIAL",
+    "effect": "Whips up a strong gust of wind"
+  },
+  {
+    "name": "Sand Attack",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 15,
+    "category": "STATUS",
+    "effect": "Lowers target's accuracy"
+  },
+  {
+    "name": "Wing Attack",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 35,
+    "category": "PHYSICAL",
+    "effect": "Strikes with wings"
+  },
+  {
+    "name": "Tackle",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 35,
+    "category": "PHYSICAL",
+    "effect": "Basic physical attack"
+  },
+  {
+    "name": "Hyper Fang",
+    "power": 80,
+    "accuracy": 90,
+    "pp": 15,
+    "category": "PHYSICAL",
+    "effect": "Powerful bite that may cause flinch"
+  },
+  {
+    "name": "Focus Energy",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 30,
+    "category": "STATUS",
+    "effect": "Raises critical hit ratio"
+  },
+  {
+    "name": "Pound",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 35,
+    "category": "PHYSICAL",
+    "effect": "Basic pounding attack"
+  },
+  {
+    "name": "Sing",
+    "power": 0,
+    "accuracy": 55,
+    "pp": 15,
+    "category": "STATUS",
+    "effect": "May put target to sleep"
+  },
+  {
+    "name": "Double Slap",
+    "power": 15,
+    "accuracy": 85,
+    "pp": 10,
+    "category": "PHYSICAL",
+    "effect": "Repeated slaps (2-5 hits)"
+  },
+  {
+    "name": "Rest",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 10,
+    "category": "STATUS",
+    "effect": "User sleeps for 2 turns, fully healing"
+  },
+  {
+    "name": "String Shot",
+    "power": 0,
+    "accuracy": 95,
+    "pp": 40,
+    "category": "STATUS",
+    "effect": "Lowers target's speed"
+  },
+  {
+    "name": "Bug Bite",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 20,
+    "category": "PHYSICAL",
+    "effect": "Bites the target"
+  },
+  {
+    "name": "Struggle",
+    "power": 50,
+    "accuracy": 100,
+    "pp": 1,
+    "category": "PHYSICAL",
+    "effect": "Used when out of PP, hurts user"
+  },
+  {
+    "name": "Poison Sting",
+    "power": 15,
+    "accuracy": 100,
+    "pp": 35,
+    "category": "PHYSICAL",
+    "effect": "Sting that may poison target"
+  },
+  {
+    "name": "Electroweb",
+    "power": 55,
+    "accuracy": 95,
+    "pp": 15,
+    "category": "SPECIAL",
+    "effect": "Electric web that lowers speed"
+  },
+  {
+    "name": "Rock Throw",
+    "power": 50,
+    "accuracy": 90,
+    "pp": 15,
+    "category": "PHYSICAL",
+    "effect": "Throws a rock at the target"
+  },
+  {
+    "name": "Magnitude",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 30,
+    "category": "PHYSICAL",
+    "effect": "Ground shake with varying power"
+  },
+  {
+    "name": "Rollout",
+    "power": 30,
+    "accuracy": 90,
+    "pp": 20,
+    "category": "PHYSICAL",
+    "effect": "Rolling attack that gains power"
+  },
+  {
+    "name": "Self-Destruct",
+    "power": 200,
+    "accuracy": 100,
+    "pp": 5,
+    "category": "PHYSICAL",
+    "effect": "Explodes, user faints"
+  },
+  {
+    "name": "Dig",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 10,
+    "category": "PHYSICAL",
+    "effect": "Digs underground, attacks next turn"
+  },
+  {
+    "name": "Iron Tail",
+    "power": 100,
+    "accuracy": 75,
+    "pp": 15,
+    "category": "PHYSICAL",
+    "effect": "Hard tail that may lower defense"
+  },
+  {
+    "name": "Sand Tomb",
+    "power": 35,
+    "accuracy": 85,
+    "pp": 15,
+    "category": "PHYSICAL",
+    "effect": "Traps target in sand for 4-5 turns"
+  },
+  {
+    "name": "Splash",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 40,
+    "category": "STATUS",
+    "effect": "No effect"
+  },
+  {
+    "name": "Flail",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 15,
+    "category": "PHYSICAL",
+    "effect": "More power when user has less HP"
+  },
+  {
+    "name": "Scratch",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 35,
+    "category": "PHYSICAL",
+    "effect": "Scratches with sharp claws"
+  },
+  {
+    "name": "Confusion",
+    "power": 50,
+    "accuracy": 100,
+    "pp": 25,
+    "category": "SPECIAL",
+    "effect": "Psychic wave that may confuse"
+  },
+  {
+    "name": "Aqua Tail",
+    "power": 90,
+    "accuracy": 90,
+    "pp": 10,
+    "category": "PHYSICAL",
+    "effect": "Swings tail like a wave"
+  },
+  {
+    "name": "Teleport",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 20,
+    "category": "STATUS",
+    "effect": "Flees from wild battles"
+  },
+  {
+    "name": "Psybeam",
+    "power": 65,
+    "accuracy": 100,
+    "pp": 20,
+    "category": "SPECIAL",
+    "effect": "Psychic beam that may confuse"
+  },
+  {
+    "name": "Psychic",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "category": "SPECIAL",
+    "effect": "Strong psychic that may lower SP DEF"
+  },
+  {
+    "name": "Shadow Ball",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 15,
+    "category": "SPECIAL",
+    "effect": "Shadowy sphere that may lower SP DEF"
+  },
+  {
+    "name": "Bite",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 25,
+    "category": "PHYSICAL",
+    "effect": "Bite that may cause flinch"
+  },
+  {
+    "name": "Acid",
+    "power": 40,
+    "accuracy": 100,
+    "pp": 30,
+    "category": "SPECIAL",
+    "effect": "Sprays acid that may lower defense"
+  },
+  {
+    "name": "Peck",
+    "power": 35,
+    "accuracy": 100,
+    "pp": 35,
+    "category": "PHYSICAL",
+    "effect": "Jabs with a sharp beak"
+  },
+  {
+    "name": "Horn Attack",
+    "power": 65,
+    "accuracy": 100,
+    "pp": 25,
+    "category": "PHYSICAL",
+    "effect": "Jabs with a horn"
+  },
+  {
+    "name": "Double Kick",
+    "power": 30,
+    "accuracy": 100,
+    "pp": 30,
+    "category": "PHYSICAL",
+    "effect": "Two kicks in one turn"
+  },
+  {
+    "name": "Fire Fang",
+    "power": 65,
+    "accuracy": 95,
+    "pp": 15,
+    "category": "PHYSICAL",
+    "effect": "Bite that may burn or flinch"
+  },
+  {
+    "name": "Karate Chop",
+    "power": 50,
+    "accuracy": 100,
+    "pp": 25,
+    "category": "PHYSICAL",
+    "effect": "High critical hit ratio"
+  },
+  {
+    "name": "Low Kick",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 20,
+    "category": "PHYSICAL",
+    "effect": "More damage to heavier targets"
+  },
+  {
+    "name": "Seismic Toss",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 20,
+    "category": "PHYSICAL",
+    "effect": "Damage equals user's level"
+  },
+  {
+    "name": "Submission",
+    "power": 80,
+    "accuracy": 80,
+    "pp": 20,
+    "category": "PHYSICAL",
+    "effect": "User takes recoil damage"
+  },
+  {
+    "name": "Lick",
+    "power": 30,
+    "accuracy": 100,
+    "pp": 30,
+    "category": "PHYSICAL",
+    "effect": "Lick that may paralyze"
+  },
+  {
+    "name": "Confuse Ray",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 10,
+    "category": "STATUS",
+    "effect": "Confuses the target"
+  },
+  {
+    "name": "Dark Pulse",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 15,
+    "category": "SPECIAL",
+    "effect": "Dark aura that may cause flinch"
+  }
 ]

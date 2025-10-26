@@ -56,6 +56,8 @@ public class PokedexUi {
                     console.println(pokedex.getAttack() + pokemon.getStatus().getAttack());
                     console.println(pokedex.getDefense() + pokemon.getStatus().getDefense());
                     console.println(pokedex.getSpeed() + pokemon.getStatus().getSpeed());
+                    console.println(pokedex.getSp_attack() + pokemon.getStatus().getSp_attack());
+                    console.println(pokedex.getSp_defense() + pokemon.getStatus().getSp_defense());
                     console.println(pokedex.getModifiers() + pokemon.getModifiers().name());
                     console.println(pokedex.getType() + pokemon.getType());
                     console.println(pokedex.getMoves() + String.join(", ", pokemon.getMoves()));

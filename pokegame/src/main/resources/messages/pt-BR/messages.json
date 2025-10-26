@@ -20,6 +20,8 @@
     "attack": "Ataque: ",
     "defense": "Defesa: ",
     "speed": "Velocidade: ",
+    "sp_attack": "Ataque especial: ",
+    "sp_defense": "Defesa especial: ",
     "modifiers": "Modificadores: ",
     "type": "Tipo: ",
     "moves": "Movimentos: ",

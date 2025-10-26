@@ -6,7 +6,9 @@
     "status": {
       "attack": 49,
       "defense": 49,
-      "speed": 45
+      "speed": 45,
+      "sp_attack": 65,
+      "sp_defense": 65
     },
     "modifiers": "NONE",
     "type": [
@@ -27,7 +29,9 @@
     "status": {
       "attack": 52,
       "defense": 43,
-      "speed": 65
+      "speed": 65,
+      "sp_attack": 60,
+      "sp_defense": 50
     },
     "modifiers": "NONE",
     "type": [
@@ -47,7 +51,9 @@
     "status": {
       "attack": 48,
       "defense": 65,
-      "speed": 43
+      "speed": 43,
+      "sp_attack": 50,
+      "sp_defense": 64
     },
     "modifiers": "NONE",
     "type": [
@@ -67,7 +73,9 @@
     "status": {
       "attack": 55,
       "defense": 40,
-      "speed": 90
+      "speed": 90,
+      "sp_attack": 50,
+      "sp_defense": 50
     },
     "modifiers": "NONE",
     "type": [
@@ -87,7 +95,9 @@
     "status": {
       "attack": 45,
       "defense": 40,
-      "speed": 56
+      "speed": 56,
+      "sp_attack": 35,
+      "sp_defense": 35
     },
     "modifiers": "NONE",
     "type": [
@@ -108,7 +118,9 @@
     "status": {
       "attack": 56,
       "defense": 35,
-      "speed": 72
+      "speed": 72,
+      "sp_attack": 25,
+      "sp_defense": 35
     },
     "modifiers": "NONE",
     "type": [
@@ -128,7 +140,9 @@
     "status": {
       "attack": 45,
       "defense": 20,
-      "speed": 20
+      "speed": 20,
+      "sp_attack": 45,
+      "sp_defense": 25
     },
     "modifiers": "NONE",
     "type": [
@@ -148,7 +162,9 @@
     "status": {
       "attack": 30,
       "defense": 35,
-      "speed": 45
+      "speed": 45,
+      "sp_attack": 20,
+      "sp_defense": 20
     },
     "modifiers": "NONE",
     "type": [
@@ -168,7 +184,9 @@
     "status": {
       "attack": 35,
       "defense": 30,
-      "speed": 50
+      "speed": 50,
+      "sp_attack": 20,
+      "sp_defense": 20
     },
     "modifiers": "NONE",
     "type": [
@@ -189,7 +207,9 @@
     "status": {
       "attack": 80,
       "defense": 100,
-      "speed": 20
+      "speed": 20,
+      "sp_attack": 30,
+      "sp_defense": 30
     },
     "modifiers": "NONE",
     "type": [
@@ -210,7 +230,9 @@
     "status": {
       "attack": 45,
       "defense": 160,
-      "speed": 70
+      "speed": 70,
+      "sp_attack": 30,
+      "sp_defense": 45
     },
     "modifiers": "NONE",
     "type": [
@@ -231,7 +253,9 @@
     "status": {
       "attack": 10,
       "defense": 55,
-      "speed": 80
+      "speed": 80,
+      "sp_attack": 15,
+      "sp_defense": 20
     },
     "modifiers": "NONE",
     "type": [
@@ -251,7 +275,9 @@
     "status": {
       "attack": 52,
       "defense": 48,
-      "speed": 55
+      "speed": 55,
+      "sp_attack": 65,
+      "sp_defense": 50
     },
     "modifiers": "NONE",
     "type": [
@@ -271,7 +297,9 @@
     "status": {
       "attack": 20,
       "defense": 15,
-      "speed": 90
+      "speed": 90,
+      "sp_attack": 105,
+      "sp_defense": 55
     },
     "modifiers": "NONE",
     "type": [
@@ -291,7 +319,9 @@
     "status": {
       "attack": 60,
       "defense": 44,
-      "speed": 55
+      "speed": 55,
+      "sp_attack": 40,
+      "sp_defense": 54
     },
     "modifiers": "NONE",
     "type": [
@@ -311,7 +341,9 @@
     "status": {
       "attack": 57,
       "defense": 40,
-      "speed": 50
+      "speed": 50,
+      "sp_attack": 40,
+      "sp_defense": 40
     },
     "modifiers": "NONE",
     "type": [
@@ -331,7 +363,9 @@
     "status": {
       "attack": 47,
       "defense": 52,
-      "speed": 41
+      "speed": 41,
+      "sp_attack": 40,
+      "sp_defense": 40
     },
     "modifiers": "NONE",
     "type": [
@@ -351,7 +385,9 @@
     "status": {
       "attack": 70,
       "defense": 45,
-      "speed": 60
+      "speed": 60,
+      "sp_attack": 70,
+      "sp_defense": 50
     },
     "modifiers": "NONE",
     "type": [
@@ -371,7 +407,9 @@
     "status": {
       "attack": 80,
       "defense": 50,
-      "speed": 35
+      "speed": 35,
+      "sp_attack": 35,
+      "sp_defense": 35
     },
     "modifiers": "NONE",
     "type": [
@@ -391,7 +429,9 @@
     "status": {
       "attack": 35,
       "defense": 30,
-      "speed": 80
+      "speed": 80,
+      "sp_attack": 100,
+      "sp_defense": 35
     },
     "modifiers": "NONE",
     "type": [

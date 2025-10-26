@@ -10,6 +10,8 @@ public class Pokedex {
     private String attack;
     private String defense;
     private String speed;
+    private String sp_attack;
+    private String sp_defense;
     private String modifiers;
     private String type;
     private String moves;
@@ -41,6 +43,12 @@ public class Pokedex {
     }
     public String getSpeed() {
         return speed;
+    }
+    public String getSp_attack() {
+        return sp_attack;
+    }
+    public String getSp_defense() {
+        return sp_defense;
     }
     public String getModifiers() {
         return modifiers;

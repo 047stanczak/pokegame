@@ -19,6 +19,14 @@
 *.tar.gz
 *.rar
 
+# Maven
+/target/
+/*.iml
+/.idea/
+/*.log
+*.class
+dependency-reduced-pom.xml
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
