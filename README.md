@@ -11,14 +11,7 @@
 * [Como rodar](#como-rodar)
   * [Executável JAR](#executável-jar)
   * [Executando via IDE](#executando-via-ide)
-* [Como testar](#como-testar)
-  * [Testes unitários (Maven)](#testes-unitários-maven)
-  * [Testes unitários (Gradle)](#testes-unitários-gradle)
-* [Exemplos de comandos](#exemplos-de-comandos)
 * [Estrutura do projeto](#estrutura-do-projeto)
-* [Contribuição](#contribuição)
-* [Licença](#licença)
-* [Contato](#contato)
 
 ---
 
