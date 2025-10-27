@@ -1,13 +1,16 @@
 package com.stanczak.pokegame.ui;
 
 import com.stanczak.pokegame.persistence.MessageLoader;
+import com.stanczak.pokegame.service.PokemonService;
 
 public class StartPageUI {
 
     private final Console console;
+    private final PokemonService pokemonService;
 
-    public StartPageUI(Console console) {
+    public StartPageUI(Console console, PokemonService pokemonService) {
         this.console = console;
+        this.pokemonService = pokemonService;
     }
 
     public final void start() {
@@ -27,8 +30,8 @@ public class StartPageUI {
 
             switch (option) {
                 case 1:
-                    BattleUi battleUi = new BattleUi(console);
-                    battleUi.battle();
+                    BattleUi battleUi = new BattleUi(console, pokemonService);
+                    battleUi.startBattleFlow();
                     break;
                 case 2:
                     PokedexUi pokedexUi = new PokedexUi(console);
@@ -39,7 +42,7 @@ public class StartPageUI {
                     inMenu = false;
                     break;
                 default:
-                    System.out.println("Opção inválida.");
+                    console.println(menu.getOption_invalid());
                     break;
             }
         }

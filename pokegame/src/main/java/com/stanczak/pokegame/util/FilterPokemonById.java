@@ -1,7 +1,7 @@
 package com.stanczak.pokegame.util;
 
 import com.stanczak.pokegame.model.Pokemon;
-import com.stanczak.pokegame.persistence.DataLoader;
+import com.stanczak.pokegame.persistence.PokemonLoader;
 
 public class FilterPokemonById {
     private int id;
@@ -12,7 +12,7 @@ public class FilterPokemonById {
 
     public final Pokemon filter() {
 
-        return DataLoader.pokemonList.stream()
+        return PokemonLoader.pokemonList.stream()
             .filter(pokemon -> pokemon.getId() == id)
             .findFirst()
             .orElse(null);

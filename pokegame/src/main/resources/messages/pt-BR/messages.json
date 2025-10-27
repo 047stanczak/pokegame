@@ -14,6 +14,7 @@
     "title": "Pokedex",
     "option_list": "1 - Listar todos os Pokemons",
     "option_search": "2 - Buscar Pokemon por id (Busca avançada)",
+    "pokemon_not_found": "Pokemon não encontrado.",
     "name": "Nome: ",
     "id": "ID: ",
     "hp": "HP: ",
@@ -26,7 +27,8 @@
     "type": "Tipo: ",
     "moves": "Movimentos: ",
     "enter_id": "Digite o ID do Pokemon: ",
-    "press_enter": "Pressione enter para continuar"
+    "press_enter": "Pressione enter para continuar",
+    "back": "Voltando..."
   }
   
 }

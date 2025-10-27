@@ -5,18 +5,18 @@ import java.util.List;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.stanczak.pokegame.model.Pokemon;
+import com.stanczak.pokegame.model.Moves;
 
-public class DataLoader {
-    public static List<Pokemon> pokemonList;
+public class MovesLoader {
+    public static List<Moves> movesList;
     static {
         try {
-            InputStream inputStream = Pokemon.class.getClassLoader().getResourceAsStream("pokemon.json");
+            InputStream inputStream = Moves.class.getClassLoader().getResourceAsStream("moves.json");
             ObjectMapper objectMapper = new ObjectMapper();
-            List<Pokemon> pokemons = objectMapper.readValue(inputStream, 
-            new TypeReference<List<Pokemon>>() {});
+            List<Moves> moves = objectMapper.readValue(inputStream, 
+            new TypeReference<List<Moves>>() {});
             inputStream.close();
-            pokemonList = pokemons;
+            movesList = moves;
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

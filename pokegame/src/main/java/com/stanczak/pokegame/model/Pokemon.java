@@ -9,7 +9,7 @@ public class Pokemon {
     private Status status;
     private Modifiers modifiers;  
     private List<ElementType> type;
-    private List<String> moves;
+    private List<Moves> moves;
     
     public int getId() {
         return id;
@@ -47,10 +47,10 @@ public class Pokemon {
     public void setType(List<ElementType> type) {
         this.type = type;
     }
-    public List<String> getMoves() {
+    public List<Moves> getMoves() {
         return moves;
     }
-    public void setMoves(List<String> moves) {
+    public void setMoves(List<Moves> moves) {
         this.moves = moves;
     }
 }

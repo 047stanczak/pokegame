@@ -4,6 +4,7 @@ public class Pokedex {
     private String title;
     private String option_list;
     private String option_search;
+    private String pokemon_not_found;
     private String name;
     private String id;
     private String hp;
@@ -17,6 +18,7 @@ public class Pokedex {
     private String moves;
     private String enter_id;
     private String press_enter;
+    private String back;
     public String getTitle() {
         return title;
     }
@@ -25,6 +27,9 @@ public class Pokedex {
     }
     public String getOption_search() {
         return option_search;
+    }
+    public String getPokemon_not_found() {
+        return pokemon_not_found;
     }
     public String getName() {
         return name;
@@ -64,6 +69,9 @@ public class Pokedex {
     }
     public String getPress_enter() {
         return press_enter;
+    }
+    public String getBack() {
+        return back;
     }
 
 }

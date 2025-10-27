@@ -43,4 +43,9 @@ public final class Console {
     public void close() {
         scanner.close();
     }
+
+    public void pause() {
+        out.println("Pressione Enter para continuar...");
+        readLine("> ");
+    }
 }

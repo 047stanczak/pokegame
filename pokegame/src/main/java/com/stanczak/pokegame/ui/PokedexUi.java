@@ -1,7 +1,7 @@
 package com.stanczak.pokegame.ui;
 
 import com.stanczak.pokegame.model.Pokemon;
-import com.stanczak.pokegame.persistence.DataLoader;
+import com.stanczak.pokegame.persistence.PokemonLoader;
 import com.stanczak.pokegame.persistence.MessageLoader;
 import com.stanczak.pokegame.util.FilterPokemonById;
 
@@ -17,7 +17,7 @@ public class PokedexUi {
         var messages = MessageLoader.getMessages();
         var pokedex = messages.getPokedex();
         var menu = messages.getMenu();
-        var pokemonList = DataLoader.pokemonList;
+        var pokemonList = PokemonLoader.pokemonList;
 
         console.clearScreen();
         console.println(pokedex.getTitle());
@@ -34,11 +34,8 @@ public class PokedexUi {
                 console.clearScreen();
                 pokemonList.forEach(pokemon -> 
                 console.println(pokedex.getName() + pokemon.getName() + " - " + pokedex.getId() + pokemon.getId()));
-                console.println(pokedex.getPress_enter());
-                line = console.readLine("> ").trim();
-                if (line.isEmpty() || !line.isEmpty()) {
-                    return;
-                }
+                console.pause();
+                return;
             case 2:
                 console.clearScreen();
                 console.println(pokedex.getEnter_id());
@@ -49,7 +46,7 @@ public class PokedexUi {
                 Pokemon pokemon = filter.filter();
 
                 if (pokemon == null) {
-                    console.println("Pokémon não encontrado!");
+                    console.println(pokedex.getPokemon_not_found());
                 } else {
                     console.println(pokedex.getName() + pokemon.getName());
                     console.println(pokedex.getHp() + pokemon.getHp());
@@ -60,16 +57,14 @@ public class PokedexUi {
                     console.println(pokedex.getSp_defense() + pokemon.getStatus().getSp_defense());
                     console.println(pokedex.getModifiers() + pokemon.getModifiers().name());
                     console.println(pokedex.getType() + pokemon.getType());
-                    console.println(pokedex.getMoves() + String.join(", ", pokemon.getMoves()));
                 }
 
-                console.println(pokedex.getPress_enter());
-                console.readLine("> ");
+                console.pause();
                 console.clearScreen();
 
                 return;
             case 3:
-                System.out.println("Voltando...");
+                console.println(pokedex.getBack());
                 return;
         
             default:
