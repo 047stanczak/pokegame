@@ -9,7 +9,7 @@ import com.stanczak.pokegame.util.MoveSorter;
 
 public class PokemonService {
 
-    public Pokemon filterPokemon(String pokemonId) {
+    public Pokemon filterPokemonById(String pokemonId) {
         try {
             FilterPokemonById pokemonFilter = new FilterPokemonById(Integer.parseInt(pokemonId));
             Pokemon pokemon = pokemonFilter.filter();

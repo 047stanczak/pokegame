@@ -1,70 +1,78 @@
 package com.stanczak.pokegame.ui;
 
-import com.stanczak.pokegame.model.Pokemon;
-import com.stanczak.pokegame.service.PokemonService;
+import java.util.Optional;
 
+import com.stanczak.pokegame.controller.BattleController;
+import com.stanczak.pokegame.dto.BattlePairDTO;
+import com.stanczak.pokegame.model.Pokemon;
+import com.stanczak.pokegame.model.messages.Battle;
+import com.stanczak.pokegame.persistence.MessageLoader;
 public class BattleUi {
 
     private final Console console;
-    private final PokemonService pokemonService;
+    private final BattleController battleController;
 
-    public BattleUi(Console console, PokemonService pokemonService) {
+    public BattleUi(Console console, BattleController battleController) {
         this.console = console;
-        this.pokemonService = pokemonService;
+        this.battleController = battleController;
     }
 
-    public final void startBattleFlow() {
+    public Battle battleMessage() {
+        var messages = MessageLoader.getMessages();
+        var battle = messages.getBattle();
+        return battle;
+    }
+
+    public final void startBattleFlow() { 
         console.clearScreen();
-        console.println("Antes de começar a batalha, você precisa escolher seu pokemon e um oponente.");
+        console.println(battleMessage().getBattle_start());
+        
         choosePokemon();
 
         console.clearScreen();
-        console.println("A partir de agora, a batalha começará!");
-        console.pause();
-        //battle(null, null); // PARA IMPLEMENTAR: Passar os pokémons escolhidos
     }
 
     public final void choosePokemon() {
-        console.println("Selecione um pokemon para lutar:");
-        String pokemonId = console.readLine("> ").trim();
-        console.println("Selecione um oponente:");
+        console.println(battleMessage().getChoose_your_pokemon());
+        String playerPokemonId = console.readLine("> ").trim();
+        console.println(battleMessage().getChoose_opponent_pokemon());
         String opponentPokemonId = console.readLine("> ").trim();
-        Pokemon pokemon = pokemonService.filterPokemon(pokemonId);
-        Pokemon opponentPokemon = pokemonService.filterPokemon(opponentPokemonId);
-        pokemon.setMoves(pokemonService.sortMoves(pokemon));
-        opponentPokemon.setMoves(pokemonService.sortMoves(opponentPokemon));
+        Optional<BattlePairDTO> pair = battleController.choosePokemon(playerPokemonId, opponentPokemonId);
+        if (pair.isPresent()) {
+            showBattleStatus(pair.get().getPlayer(), pair.get().getOpponent());
+        } else {
+            choosePokemonError();
+        }
     }
 
-    public final void battle(Pokemon pokemon, Pokemon opponentPokemon) {
+    public final void choosePokemonError() {
         console.clearScreen();
-        console.println(pokemon.getName() + " HP: " + pokemon.getHp() + " - " + opponentPokemon.getName() + " HP: " + opponentPokemon.getHp());
-        console.println("");
-
-        console.println("1 - Ataques");
-        console.println("2 - Itens");
-        console.println("3 - Fugir");
-        String line = console.readLine("> ").trim();
-        int option = Integer.parseInt(line);
-
-        switch (option) {
-            case 1:
-                console.clearScreen();
-                console.println("Escolha um ataque:");
-                // PARA IMPLEMENTAR: Listar os ataques do Pokémon
-                break;
-            case 2:
-                console.clearScreen();
-                console.println("Itens não implementados ainda!");
-                console.println("Pressione Enter para continuar...");
-                console.readLine("> ").trim();
-                battle(pokemon, opponentPokemon);
-                break;
-            case 3:
-                console.println("Você fugiu da batalha!");
+        console.println("Entrada inválida. Deseja tentar novamente? (s/n)");
+        while (true) {
+            String resp = console.readLine("> ").trim().toLowerCase();
+            if (resp.equals("s") || resp.equals("sim")) {
+                choosePokemon();
                 return;
-            default:
-                console.println("Opção inválida!");
-                break;
+            } else if (resp.equals("n") || resp.equals("nao") || resp.equals("não")) {
+                console.println("Operação cancelada.");
+                console.pause();
+                return;
+            } else {
+                console.println("Resposta inválida. Digite 's' para sim ou 'n' para não.");
+            }
         }
+    }
+
+    public final void showBattleStatus (Pokemon player, Pokemon opponentPokemon) {
+        console.clearScreen();
+        console.println(battleMessage().getStatus()
+        .replace("{pokemon}", player.getName())
+        .replace("{hp}", String.valueOf(player.getHp()))
+        .replace("{opponent}", opponentPokemon.getName())
+        .replace("{opponent_hp}", String.valueOf(opponentPokemon.getHp()))
+        );
+        console.pause();
+
+        
     }
 }

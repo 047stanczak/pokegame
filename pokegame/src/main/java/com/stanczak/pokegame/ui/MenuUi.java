@@ -1,16 +1,16 @@
 package com.stanczak.pokegame.ui;
 
+import com.stanczak.pokegame.controller.BattleController;
 import com.stanczak.pokegame.persistence.MessageLoader;
-import com.stanczak.pokegame.service.PokemonService;
 
 public class MenuUi {
 
     private final Console console;
-    private final PokemonService pokemonService;
+    private final BattleController battleController;
 
-    public MenuUi(Console console, PokemonService pokemonService) {
+    public MenuUi(Console console, BattleController battleController) {
         this.console = console;
-        this.pokemonService = pokemonService;
+        this.battleController = battleController;
     }
 
     public final void start() {
@@ -29,7 +29,7 @@ public class MenuUi {
 
             switch (option) {
                 case 1:
-                    StartPageUI startPage = new StartPageUI(console, pokemonService);
+                    StartPageUI startPage = new StartPageUI(console, battleController);
                     startPage.start();
                     break;
                 case 2:

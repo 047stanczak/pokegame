@@ -29,6 +29,35 @@
     "enter_id": "Digite o ID do Pokemon: ",
     "press_enter": "Pressione enter para continuar",
     "back": "Voltando..."
-  }
-  
+  },
+  "battle": {
+    "title_choose_pokemon": "Escolha seu Pokemon:",
+    "choose_pokemon": "Antes de começar a batalha, você precisa escolher seu pokemon e um oponente.",
+    "choose_your_pokemon": "Selecione um pokemon para lutar (ID):",
+    "choose_opponent_pokemon": "Selecione o pokemon oponente (ID):",
+    "invalid_pokemon_choice": "Escolha de pokemon inválida. Tente novamente.",
+    "battle_start": "A batalha começou!",
+    "confrontation": "Você está enfrentando: {opponent}",
+    "status": "{pokemon} - HP: {hp} - {opponent} - HP: {opponent_hp}",
+    "pokemon":{
+      "choose_action": "Escolha sua ação:",
+      "option_attack": "1 - Atacar",
+      "option_item": "2 - Usar item",
+      "option_run": "3 - Fugir",
+      "choose_attack": "Escolha seu ataque: ",
+      "move_use": "{pokemon} usou {move}!",
+      "wrong_move": "{pokemon} tentou usar {move}, mas errou!",
+      "critical_move": "{pokemon} acertou um dano crítico! Dano: {damage}",
+      "not_effective": "{pokemon} acertou um golpe, mas não foi muito efetivo... Dano: {damage}",
+      "very_effective": "{pokemon} acertou um golpe, e foi super efetivo! Dano: {damage}"
+    },
+    "opponent": {
+      "move_use": "{opponent} usou {move}",
+      "wrong_move": "{opponent} tentou usar {move}, mas errou!",
+      "critical_move": "{opponent} acertou um dano crítico! Dano: {damage}",
+      "not_effective": "{opponent} acertou um golpe, mas não foi muito efetivo... Dano: {damage}",
+      "very_effective": "{opponent} acertou um golpe, e foi super efetivo! Dano: {damage}"
+    }
+    
+    }
 }

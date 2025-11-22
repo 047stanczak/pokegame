@@ -1,9 +1,9 @@
 package com.stanczak.pokegame.engine;
 
-import com.stanczak.pokegame.model.Pokemon;
+import com.stanczak.pokegame.dto.BattlePairDTO;
 
 public class BattleEngine {
-    public final void startBattle(Pokemon pokemon, Pokemon opponentPokemon) {
+    public final void battle(BattlePairDTO battlePairDTO) {
         
     }
 }

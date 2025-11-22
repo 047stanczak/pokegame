@@ -1,16 +1,17 @@
 package com.stanczak.pokegame.ui;
 
+import com.stanczak.pokegame.controller.BattleController;
 import com.stanczak.pokegame.persistence.MessageLoader;
-import com.stanczak.pokegame.service.PokemonService;
 
 public class StartPageUI {
 
     private final Console console;
-    private final PokemonService pokemonService;
+    private final BattleController battleController;
 
-    public StartPageUI(Console console, PokemonService pokemonService) {
+
+    public StartPageUI(Console console, BattleController battleController) {
         this.console = console;
-        this.pokemonService = pokemonService;
+        this.battleController = battleController;
     }
 
     public final void start() {
@@ -30,7 +31,7 @@ public class StartPageUI {
 
             switch (option) {
                 case 1:
-                    BattleUi battleUi = new BattleUi(console, pokemonService);
+                    BattleUi battleUi = new BattleUi(console, battleController);
                     battleUi.startBattleFlow();
                     break;
                 case 2:
