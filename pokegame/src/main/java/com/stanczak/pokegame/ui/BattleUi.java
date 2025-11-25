@@ -28,8 +28,6 @@ public class BattleUi {
         console.println(battleMessage().getBattle_start());
         
         choosePokemon();
-
-        console.clearScreen();
     }
 
     public final void choosePokemon() {

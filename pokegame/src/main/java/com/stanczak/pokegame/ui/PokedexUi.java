@@ -65,10 +65,11 @@ public class PokedexUi {
                 return;
             case 3:
                 console.println(pokedex.getBack());
+                console.readLine("> ").trim();
                 return;
         
             default:
-                break;
+                throw new NumberFormatException();
         }
     }
 }

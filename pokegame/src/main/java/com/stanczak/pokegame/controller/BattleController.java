@@ -13,7 +13,12 @@ public class BattleController {
     }
 
     public final Optional<BattlePairDTO> choosePokemon(String playerPokemonId, String opponentPokemonId){
-        Optional<BattlePairDTO> pair = pokemonController.choosePokemon(playerPokemonId, opponentPokemonId);
-        return pair;
+        try {
+            Optional<BattlePairDTO> pair = pokemonController.choosePokemon(playerPokemonId, opponentPokemonId);
+            return pair;
+        } catch (NullPointerException e) {
+            Optional<BattlePairDTO> pair = Optional.empty();
+            return pair;
+        }
     }
 }

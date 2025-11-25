@@ -17,6 +17,7 @@ public class MenuUi {
         boolean running = true;
         var messages = MessageLoader.getMessages();
         var menu = messages.getMenu();
+        var pokedex = messages.getPokedex();
 
         while(running){
             console.clearScreen();
@@ -24,20 +25,31 @@ public class MenuUi {
             console.println(menu.getOption_play());
             console.println(menu.getOption_exit());
 
-            String line = console.readLine("> ").trim();
-            int option = Integer.parseInt(line);
+            try {
+                String line = console.readLine("> ").trim();
+                int option = Integer.parseInt(line);
 
-            switch (option) {
-                case 1:
-                    StartPageUI startPage = new StartPageUI(console, battleController);
-                    startPage.start();
-                    break;
-                case 2:
-                    running = false;
-                    break;
-                default:
-                    console.println(menu.getOption_invalid());
-                    break;
+                switch (option) {
+                    case 1:
+                        StartPageUI startPage = new StartPageUI(console, battleController);
+                        startPage.start();
+                        break;
+                    case 2:
+                        running = false;
+                        break;
+                    default:
+                        console.println(menu.getOption_invalid());
+                        break;
+            }
+            } catch (NumberFormatException e) {
+                console.clearScreen();
+                console.println("Isso não é um número válido.");
+                console.readLine(pokedex.getPress_enter());
+            } 
+            catch (NullPointerException e) {
+                console.clearScreen();
+                console.println("Nada foi digitado.");
+                console.readLine(pokedex.getPress_enter());
             }
         }
     }
